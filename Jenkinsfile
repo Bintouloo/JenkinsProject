@@ -1,11 +1,11 @@
 node{
 	stage('Clone'){
-		sh'',https://github.com/steevCpp/JenkinsProject.git
+		git 'https://github.com/steevCpp/JenkinsProject.git'
 	}
 	stage('Build'){
-		sh '',EmployManagementSystem.java
+		sh label:'',script:'EmployManagementSystem.java'
 	}
 	stage('Run'){
-		sh'',java EmployManagementSystem
+		sh label: '', script: 'java EmployManagementSystem'
 	}
 }
