@@ -1,3 +1,5 @@
+ #!/usr/bin/env
+
 node{
 	stage('Clone'){
 		git 'https://github.com/steevCpp/JenkinsProject.git'
