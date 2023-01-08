@@ -1,6 +1,6 @@
 node {
 	stage('Clone'){
-	git url :'https://github.com/steevCpp/JenkinsProject'
+	git url :'https://github.com/Bintouloo/JenkinsProject.git'
 	}
 	stage('Build'){
 		sh label:'', script:'javac EmployManagementSystem.java'
